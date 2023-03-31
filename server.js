@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
 // Define the route for the /template endpoint
 app.get("/template", (req, res) => {
   // Read the EJS file
-  const template = fs.readFileSync("../views/index.ejs", "utf-8");
+  const template = fs.readFileSync("./index.ejs", "utf-8");
 
   // Define the data to be used in the template
   const data = {
